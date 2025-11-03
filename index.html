@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Dog Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        \.navbar-custom a {
+        color: purple !important;
+        font-weight: 600;
+      }
+
+      
+      .title-box {
+        background-color: lightgray;
+        color: crimson;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 20px auto 10px auto;
+        width: fit-content;
+      }
+
+      
+      .dog-section img {
+        max-width: 250px;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      
+      .difficulty-text span {
+        font-weight: bold;
+        margin: 0 15px;
+      }
+
+      .difficulty-text .left { color: green; }
+      .difficulty-text .middle { color: goldenrod; }
+      .difficulty-text .hard { color: red; }
+
+      
+      .purple-bg {
+        background-color: purple;
+        color: white;
+        padding: 50px 20px;
+        border-radius: 10px;
+        margin-top: 40px;
+      }
+
+    
+      .purple-bg .card {
+        background-color: #f8f9fa;
+        color: black;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      }
+
+      
+      .demo-btn {
+        background-color: white;
+        color: purple;
+        font-weight: bold;
+        border: 2px solid white;
+      }
+
+      .demo-btn:hover {
+        background-color: #f0f0f0;
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+
+    
+    <div class="title-box">
+      AI Dog Demo Project
+    </div>
+
+    
+    <ul class="nav justify-content-center navbar-custom bg-light py-3 mb-4">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+
+    
+    <div class="container mt-4">
+      <div class="row align-items-center dog-section">
+        <div class="col-md-4 text-center">
+          <img src="./images/dogs.jpg" alt="Dog Image">
+        </div>
+        <div class="col-md-8">
+          <h3>Welcome to the AI Dog Demo!</h3>
+          <p>
+            This project demonstrates how artificial intelligence can generate realistic and unique dog images.
+            Each AI dog you see is created from scratch using neural network models that learn visual features of real dogs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container text-center my-4 difficulty-text">
+      <span class="left">Left</span>
+      <span class="middle">Middle</span>
+      <span class="hard">Hard</span>
+    </div>
+
+    
+    <div class="container-fluid purple-bg">
+      <div class="d-flex justify-content-center flex-wrap gap-4">
+
+        <div class="card" style="width: 18rem;">
+          <img src="./images/AIdog1.png" class="card-img-top" alt="AI Dog 1">
+          <div class="card-body">
+            <h5 class="card-title">AI Dog #1</h5>
+            <p class="card-text">An energetic digital pup ready for adventure.</p>
+            <a href="#" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="./images/AIDog2.png" class="card-img-top" alt="AI Dog 2">
+          <div class="card-body">
+            <h5 class="card-title">AI Dog #2</h5>
+            <p class="card-text">A calm and curious AI companion.</p>
+            <a href="#" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="./images/AIdog3.png" class="card-img-top" alt="AI Dog 3">
+          <div class="card-body">
+            <h5 class="card-title">AI Dog #3</h5>
+            <p class="card-text">A loyal and playful generated friend.</p>
+            <a href="#" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+
+      </div>
+
+     
+      <div class="text-center mt-5">
+        <button class="btn demo-btn">Launch Demo Mode</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
